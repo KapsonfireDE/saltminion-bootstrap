@@ -1,3 +1,4 @@
+#!/bin/bash
 # Download key
 sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg https://repo.saltproject.io/py3/debian/$(lsb_release -rs)/amd64/latest/salt-archive-keyring.gpg
 # Create apt sources list file

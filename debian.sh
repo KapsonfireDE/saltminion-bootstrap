@@ -12,6 +12,6 @@ echo "" > /etc/salt/minion
 echo "master: ${SALTSTACK_MASTER}" >> /etc/salt/minion
 echo "id: ${SALTSTACK_MINIONID}" >> /etc/salt/minion
 
-echo "id: ${SALTSTACK_MINIONID}" > /etc/salt/minion_id
+echo -n "${SALTSTACK_MINIONID}" > /etc/salt/minion_id
 
 service salt-minion restart
